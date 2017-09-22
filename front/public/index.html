@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">  <
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Tammudu|Encode+Sans+Expanded|Play|Ubuntu" rel="stylesheet">
+    
+
+
+    <title>GitHub following viewer</title>
+  </head>
+  <body>
+  <div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="particles/particles.js"></script>
+<script src="js/app.js"></script>
+<!--<h1 id="text">Juan Manuel Rodríguez Barragán</h1>-->
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="container">
+      <div id="root"></div>
+    </div>
+  
+  </body>
+</html>

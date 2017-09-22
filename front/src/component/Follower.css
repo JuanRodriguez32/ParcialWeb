@@ -1,0 +1,20 @@
+img{
+	float: left;
+	width: 30%;
+}
+.user, .url {
+	font-size: 15px;
+	padding-left: 40px;
+}
+.follower {
+	background: #F7B733;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50%; 
+	width: 360px;		
+	color: white;		 
+   font-family: 'Play', sans-serif;
+   font-weight: bolder;
+   text-align: center;
+}

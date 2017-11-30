@@ -28,7 +28,7 @@ Después de lo anterior, entrar a la carpeta correspondiente al front-end y ejec
 
 Si todo sale bien y confiando en Dios, debería estar en capacidad de realizar consultas y obtener los datos de los followers de cierto usuario Git.
 
-#HOW TO/ Cómo no embarrarla 
+# HOW TO/ Cómo no embarrarla 
 
 Se debe digitar el usuario de github, si el usuario es correcto se visualizarán los seguidores, de lo contrario saldrá la queue de seguidores vacías :( 
 La parte creativa fue la visualizaición de forma uno detrás de otro, es decir en lista. Adicionalmente se obtendrá la imagen del perfil de Github del usuario desde el JSON generado por el API de Github.
